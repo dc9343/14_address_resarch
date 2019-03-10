@@ -9,19 +9,19 @@ address_data = [{"address1": "岩手県",
                  "zipcode": "6638141"},
                 ]
 
-if __name__ == '__main__':
-    # 課題1 '兵庫県西宮市高須市' と出力してください
 
+def main():
+    # 課題1 '兵庫県西宮市高須市' と出力してください
     address1 = address_data[1]["address1"]
     address2 = address_data[1]["address2"]
     address3 = address_data[1]["address3"]
-
     print(f"{address1}{address2}{address3}")
-
     # 課題2 '岩手県八幡平大更' と出力してください
-
     address1 = address_data[0]["address1"]
     address2 = address_data[0]["address2"]
     address3 = address_data[0]["address3"]
-
     print(f"{address1}{address2}{address3}")
+
+
+if __name__ == '__main__':
+    main()
