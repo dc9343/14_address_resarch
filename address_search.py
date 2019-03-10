@@ -1,7 +1,10 @@
 import requests
 
 if __name__ == '__main__':
-    zipcode = "1200012"
+
+    zipcode = input("郵便番号(7ケタ)?: ")
+
+    # zipcode = "1200012"
 
     url = f"http://zipcloud.ibsnet.co.jp/api/search?zipcode={zipcode}"
 
