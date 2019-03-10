@@ -1,10 +1,8 @@
 import requests
 
-if __name__ == '__main__':
 
+def main():
     zipcode = input("郵便番号(7ケタ)?: ")
-
-    # zipcode = "1200012"
 
     url = f"http://zipcloud.ibsnet.co.jp/api/search?zipcode={zipcode}"
 
@@ -17,3 +15,7 @@ if __name__ == '__main__':
     address3 = address_dict["results"][0]["address3"]
 
     print(f"{address1}{address2}{address3}")
+
+
+if __name__ == '__main__':
+    main()
